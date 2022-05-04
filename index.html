@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Bootstrap Website exercise</title>
+</head>
+<body>
+    
+        <!-- header -->
+        <header>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(37, 190, 190);">
+                <div class="container-fluid">
+                  <a class="navbar-brand w-25" href="#"><img src="./images/iam_fine_masonwabe_art.jpg" alt="" class="rounded" style="width: 10%;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      <a class="nav-link" href="#about">About</a>
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- main -->
+        <main class="text-white py-5" style="background-image:url(./images/jackson-so-_t-l5FFH8VA-unsplash.jpg); background-repeat: no-repeat; background-attachment: scroll; object-fit: cover;">
+
+                <!--HOME-->
+
+            <div class="container">
+                <section id="home" style="height: 100vh;">
+                    <h1 class="text-center pt-5 display-2" style="color: rgb(37, 190, 190);">Sibongile Rwayi</h1>
+                    <img src="./images/iam_fine_masonwabe_art.jpg" alt="" class="w-25 d-flex mx-auto rounded-circle py-2">
+                    <p class="text-center text-danger py-2" style="font-size: 2vw;">Web developer</p>
+                    <div class="d-flex col-12 mx-auto">
+                        <a href="./assets/front-end-developer-1528263273.pdf" class="btn btn-secondary btn-outline-danger  mx-auto" role="button" target="_blank" style="color: rgb(37, 190, 190)">Download CV</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+            <!--ABOUT-->
+
+            <section id="about" style="background-color: rgba(190, 74, 203, 0.814);height: 100vh;" class="rounded mt-2">
+                <h2 class="text-center py-5" style="color: rgb(37, 190, 190);">About</h2>
+                <div class="row py-3">
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="./images/WhatsApp Image 2022-04-22 at 10.48.07 AM.jpeg" class="w-50 rounded-2 img-fluid" alt="">
+                    </div>
+                    <div class="col-5 d-flex justify-content-center text-center">
+                        <p>
+                            My name is Sibongile, and I'm a web developer, who is very much passionate about everything code. I eat, sleep, breathe code. I have gained comprehensive knowledge in HTML5, CSS3 and Bootstrap 5 over a span of  only a month.
+                        </p>
+                    </div>
+                </div>
+                <h2 class="text-center py-5" style="color: rgb(37, 190, 190);">Skills</h2>
+            </section> 
+
+
+
+
+
+         <!--CONTACT-->
+            
+         <section id="contact" class="py-5 mt-2" style="background-image:url(./images/jackson-so-_t-l5FFH8VA-unsplash.jpg);">
+            <div class="container text-white w-75 mx-auto rounded p-2 align-items-center" style="background-image: url(./imgs/aryan-dhiman-iGLLtLINSkw-unsplash.jpg);">
+                <h2 class="text-center display-5 p-3">Please fill in the details</h2>
+                <form class="form w-75 m-auto my-5" action="https://formspree.io/f/myyobvqb" method="post">
+                    <div class="row">
+                        <label for="name" class="col-md-2 col-form-label-lg">Name:</label>
+                        <div class="col-8">
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="surname" class="col-md-2 col-form-label-lg">Surname:</label>
+                        <div class="col-8">
+                            <input type="text" id="surname" name="surname" placeholder="Surname" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="age" class="col-md-2 col-form-label-lg">Age:</label>
+                        <div class="col-8">
+                            <input type="number" id="age" name="age" placeholder="Age" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="gender" class="col-md-2 col-form-label-lg">Gender:</label>
+                        <div class="col-8 my-3 d-flex justify-content-around">
+                            <span class="ms-3">Male <input type="radio" id="gender" name="gender" placeholder="Gender" required></span>
+                            <span class="ms-1">Female <input type="radio" id="gender" name="gender" placeholder="Gender" required></span>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="subject" class="col-md-2 col-form-label-lg">Subject:</label>
+                        <div class="col-8">
+                            <select name="subject" id="subject" class="form-select">
+                                <option value="options">Options</option>
+                                <option value="html5">HTML 5</option>
+                                <option value="css3">CSS 3</option>
+                                <option value="javastript">Javastript</option>
+                                <option value="bootstrap">Bootstrap</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label for="message" class="col-md-2 col-form-label-lg">Message:</label>
+                        <div class="col-8 form-floating">
+                            <textarea name="message" id="message" class="h-100 w-100"></textarea>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <label class="col-md-2 col-form-label-lg"></label>
+                        <div class="col-8">
+                            <input type="submit" class="btn btn-outline-danger w-100 " style="background-color: rgb(37,190,190);">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+
+
+        <!-- footer -->
+        
+    <footer class="text-center text-white" style="background-color: rgb(37,190,190)">
+      <div class="container">
+        <section class="mt-2">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="https://github.com/Elignobis/" class="text-white">Github</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="https://codepen.io/elignobis/" class="text-white">Codepen</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#help" class="text-white">Help</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#contact" class="text-white">Contact</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+        <hr class="my-5" />
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                I - Sibongile aka elignobis_codes, do not use any social media platforms. These Icons below are just for illustration and are dead links that lead nowhere.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="text-center mb-5">
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+      </div>
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2022 Copyright:
+        <a class="text-white" href="https://sibongileportfolio.netlify.app" style="text-decoration: none;"
+           >elignobis_codes();</a
+          >
+      </div>
+    </footer>
+
+    <!-- Bootstrap Javastript CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
